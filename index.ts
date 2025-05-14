@@ -17,8 +17,8 @@ export default {
           buffer += textChunk.text;
         },
         element(element) {
-          // After the text handler, check if the buffer is 'L'
-          if (buffer.trim() === "L") {
+          // After the text handler, check if the buffer is 'M'
+          if (buffer.trim() === "M") {
             found = true;
             if (element.hasAttribute("class") && element.getAttribute("class")?.includes("disabled")) {
               isDisabled = true;
