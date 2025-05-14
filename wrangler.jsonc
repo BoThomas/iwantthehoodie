@@ -1,0 +1,17 @@
+{
+  // Cloudflare Worker configuration
+  "name": "iwantthehoodie",
+  "main": "index.ts",
+  "compatibility_date": "2025-05-14",
+  "triggers": {
+    "crons": ["*/15 * * * *"]
+  },
+  "vars": {
+    "ITEM_URL": "https://sentry.shop/products/syntax-hoodie?Size=M"
+  }
+  // secrets are set via `npx wrangler secret put <name>` command or in the cf worker dashboard
+  // secrets:
+  // - TELEGRAM_BOT_TOKEN
+  // - TELEGRAM_CHAT_ID
+  // - TELEGRAM_TOPIC_ID
+}
